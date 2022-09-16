@@ -25,6 +25,9 @@ nessa figura, o processo origem envia um dado X para a area comum e o processo d
     - Bora dizer que o processo A começa a executar, quando ele ta executando ele le a variavel da fila que indica onde pode inserir o arquivo para impressão, mas ele sofre uma preempção.
     - O processo B começa a sua execução e le essa mesma variavel e consegue botar o seu arquivo no indice da fila indicada pela a variavel e incrementa essa variavel.
     -Quando o processo A volta, ele esta com o indice antigo guardado. Assim ao colocar o arquivo nessse indice da fila ele sobrepõe o arquivo do processo B, ferrando tudo.
+![Exemplo](./images/Screenshot%20from%202022-09-16%2014-54-59.png)
+![Exemplo](./images/Screenshot%20from%202022-09-16%2014-55-08.png)
+Imagens do Wikipedia
 
 ## Exclusão mutua e região critica
 - Região critica: local onde são efetuados acessos a recursos compartilhados entre 2 ou mais processos.
@@ -43,7 +46,7 @@ Assim com a exclusao mutua e a regra de o processo so sair em preempção quando
 4. Um processo não pode sofrer inanição(esperar infinitamente para entrar na região RC)
 
 ## Soluções de Exclusao Mutua
-1.Busy WAiting
+1. Busy WAiting
 2. Primitivas de sleep/wakeup
 3. Semaforos
 4. Monitores
